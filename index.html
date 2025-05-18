@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Felipe R. D. Jr.</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="inicio">
+		<nav id="barra">
+			<div class="pc">
+			<a href="#sobre">Sobre</a>
+			<a href="#formacao">Formação</a>
+			<a href="#portfolio">Portfólio</a>
+			<a href="#contato">Contato</a>
+			</div>
+
+		<!--barra em telas pequenas-->
+			<div class="mobile">
+      			<button class="menu-toggle">☰</button>
+			<div class="side-menu mobile-link">
+      			<button class="menu-close">X</button>
+				<a href="#sobre">Sobre</a>
+				<a href="#formacao">Formação</a>
+				<a href="#portfolio">Portfólio</a>
+				<a href="#contato">Contato</a>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="sobre">
+			<article>
+			<img src="imgs/avatar.jpeg" alt="minha foto">
+
+			<h6>FELIPE DA ROSA DUTRA JUNIOR</h6>
+			<h1>Sobre mim</h1>
+
+			<p>
+			Olá, meu nome é Felipe, tenho 19 anos e sou morador de Cachoeirinha, RS.
+			Sou estudante de ciências da computação pela Uninter, cursando o terceiro
+			semestre. Me interesso principalmente pelas linguagens C e C++, mas também
+			tenho conhecimento em Python e Java.
+			</p>
+			<p>
+			Além da programação, também me interesso por Linux. Prefiro destribuições
+			mais minimalistas, como o Arch e o Void. Gosto bastante de customizar meu
+			sistema, e o Linux dá total liberdade para isso, não só na parte gráfica,
+			como na própria operação do sistema. Além disso, aprecio a performance que
+			ele proporciona, com meu sistema usando apenas 380MB de RAM, mesmo com
+			interface gráfica e transparência.
+			</p>
+			<p>
+			Também tenho outros hobbies, como música e conlang, mas não sou muito
+			habilidoso em nenhum deles.
+			</p>
+			</article>
+		</section>
+		<section id="formacao">
+			<article>
+			<h1>Formação</h1>
+			Cursos:
+			<ul>
+				<li>Ciências da Computação: cursando 3º semestre</li>
+				<li>Geração Caldeira: incompleto</li>
+				<li>Desenvolvimento Web (IFRS)</li>
+				<li>Ensino médio integrado com educação financeira</li>
+			</ul>
+			Idiomas:
+			<ul>
+				<li>Português: Nativo</li>
+				<li>Inglês: B2</li>
+				<li>Espanhol: Básico</li>
+			</ul>
+			</article>
+		</section>
+		<section id="portfolio">
+			<article>
+			<h1>Portfólio</h1>
+			<h4>InvestiCalc</h4>
+			<p>
+			Uma calculadora de investimentos escrita em C. É possível calcular juros simples,
+			juros compostos e investimentos com aporte. O programa também possui uma versão em
+			Portugol e uma versão descontinuada que utiliza a biblioteca GMP para permitir o
+			cálculo de números grandes. O tempo do investimento deve ser infromado em meses e a
+			taxa de juros deve ser informada sem o sinal de porcentagem.<br><br>
+
+			<a href="https://github.com/f-dutra/InvestiCalc" target="_blank">https://github.com/f-dutra/InvestiCalc</a>
+			<br><br>
+
+			<img src="imgs/investicalc2.png">
+			<img src="imgs/investicalc.png">
+			</p>
+
+			<h4>Metrofretes</h4>
+			<p>Um site de uma empresa de fretagem fictícia. O site possui uma barra de navegação,
+			design responsivo e versão mobile. A logo foi gerada por <a href="https://www.logoai.com" target="_blank">IA</a> e as
+			imagens foram pegas do site <a href="https://www.pexels.com/" target="_blank">pexels.com</a>.
+			Em telas pequenas, os links da barra ficam escondidos e podem ser acessados ao clicar
+			no menu hamburger no canto superior direito da tela.
+			<br><br>
+
+			<a href="https://github.com/f-dutra/metrofretes" target="_blank">https://github.com/f-dutra/metrofretes</a>
+			<br><br>
+
+			<img src="imgs/metrofretes.png">
+			</p>
+			<h4>Cofrinho</h4>
+			<p>
+			Um programa escrito em java que simula um cofrinho. É possível adicionar moedas de
+			real, dolar ou euro. O programa tem as opções de adicionar moeda, remover moeda,
+			listar todas as moedas e exibir o valor total em reais armazenado no cofrinho.
+			</p>
+			<a href="https://github.com/f-dutra/cofrinho" target="_blank">https://github.com/f-dutra/cofrinho</a>
+			<br><br>
+
+			<img src="imgs/cofrinho.png">
+			<img src="imgs/cofrinho2.png">
+			<img src="imgs/cofrinho3.png">
+			</article>
+		</section>
+		<section id="contato">
+			<article>
+				<h1>Contato</h1>
+				<ul>
+					<li>Email: felipedjunior@gmail.com</li>
+					<li>Whatsapp: (51) 99200-3422</li>
+				</ul>
+				<h4>Deixe uma mensagem</h4>
+				<form>
+				<label for="inome">Seu nome</label><br>
+				<input type="text" id="inome" name="inome"><br>
+				<label for="iemail">Seu email</label><br>
+				<input type="text" id="iemail" name="iemail"><br>
+				<label for="iassunto">Assunto</label><br>
+				<input type="text" id="iassunto" name="iassunto"><br>
+				<label for="imsg">Mensagem</label><br>
+				<textarea id="imsg" name="imsg"></textarea><br><br>
+				<input type="submit" id="isend" value="Enviar">
+				</form>
+			</article>
+		</section>
+		<footer>
+			<article>
+			<p>Site feito por Felipe da Rosa Dutra Junior</p>
+			</article>
+		</footer>
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

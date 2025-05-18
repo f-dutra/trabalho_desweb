@@ -1,0 +1,170 @@
+body, input, textarea{
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, -0.14102564102564108rem + 2.735042735042735vw, 1.5rem);
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #333;
+  background-color: #e0e0e0;
+
+}
+
+h1, h6{
+  text-align: left;
+  color: #000;
+}
+
+main, header, footer{
+  max-width: 160rem;
+  margin: auto;
+
+  background-size: cover;
+  overflow: hidden;
+}
+
+article{
+  max-width: 70rem;
+  margin: auto;
+}
+
+section {
+  padding: 40px;
+  border-bottom: solid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#barra {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: solid;
+}
+
+#barra a {
+  color: black;
+
+  padding: 12px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  text-decoration: none;
+
+  line-height: 70px;
+  border-radius: 4px;
+}
+
+#barra a:hover, #contato #isend:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#sobre, #portfolio {
+  background-color: #fff;
+}
+
+#sobre p, h1 {
+  max-width: 50%
+}
+
+#sobre img {
+  float: right;
+  display: block;
+  max-width: 40%;
+}
+
+#formacao, #contato, footer{
+  background-color: #f1f1f1;
+  color: #black;
+}
+
+#contato #imsg, input{
+  border: 2px;
+  background-color: #fff;
+  border-style: solid;
+  width: 50%;
+  height: 20%;
+
+  padding: 6px;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+#contato #imsg {
+  height: 200px;
+  text-align: left;
+}
+
+#contato #isend{
+  width: 10%;
+  text-align: center;
+}
+
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.side-menu {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: -300px; /* Initially hidden */
+  width: 300px;
+  height: 100%;
+  background-color: #f1f1f1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.side-menu.open {
+  right: 0; /* Slide in */
+}
+
+.menu-close {
+  background: none;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  section{
+    padding: 20px;
+  }
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-link {
+    flex-direction: column;
+    max-width: 200px;
+    line-height: 0px;
+  }
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      float: right;
+      font-size: 1.5rem
+  }
+}
